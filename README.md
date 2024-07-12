@@ -1,5 +1,73 @@
-# STUDENT-MARKS-PROJECT
-In this project i have created a tool for predicting students' academic performance, empowering teachers and educational institutions to offer tailored assistance and resources to foster student success in school.
+
+# Student Marks Prediction Project
+This project aims to predict students' marks based on various features using a Linear Regression machine learning model. The project involves data preprocessing, model training, and evaluation.
+
+# steps of project 
+Dataset
+Dependencies
+Implementation
+Loading the Dataset
+Data Splitting
+Linear Regression Model
+Model Evaluation
+Results
+Conclusion
+
+# Dataset
+The dataset used in this project is stored in a CSV file named 02 students.csv. The dataset includes various features related to students and their marks.
+
+# Dependencies
+The project requires the following Python libraries:
+pandas
+scikit-learn
+
+# Implementation
+# Loading the Dataset
+The dataset is loaded using the read_csv function from the pandas library. The features and target variable are then extracted into separate DataFrames.
+
+# import pandas as pd
+dataset = pd.read_csv('02 students.csv')
+df = dataset.copy()
+
+# Data Splitting
+The dataset is split into training and testing sets using the train_test_split function from scikit-learn.
+
+# from sklearn.model_selection import train_test_split
+
+X = df.iloc[:, :-1]  # Select all columns except the last one
+Y = df.iloc[:, -1]   # Select only the last column
+
+x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.3, random_state=1234)
+
+# Linear Regression Model
+A Linear Regression model is created and trained on the training data. Predictions are then made on the test data.
+
+# from sklearn.linear_model import LinearRegression
+
+std_reg = LinearRegression()
+std_reg.fit(x_train, y_train)
+y_predict = std_reg.predict(x_test)
+
+# Model Evaluation
+The model is evaluated using the R-squared score and Root Mean Squared Error (RMSE).
+
+# from sklearn.metrics import mean_squared_error
+# import math
+
+mlr_score = std_reg.score(x_test, y_test)
+mlr_coefficient = std_reg.coef_
+mlr_intercept = std_reg.intercept_
+mlr_rmse = math.sqrt(mean_squared_error(y_test, y_predict))
+
+# Results
+R-squared Score: mlr_score
+Coefficients of the Line: mlr_coefficient
+Intercept of the Line: mlr_intercept
+Root Mean Squared Error (RMSE): mlr_rmse
+
+# Conclusion
+This project demonstrates the use of Linear Regression for predicting students' marks. The results indicate the model's performance in terms of R-squared score and RMSE. Future work can include testing other regression models and feature selection techniques to further improve prediction accuracy.
+
 
 
 
