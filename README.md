@@ -65,6 +65,9 @@ Coefficients of the Line: mlr_coefficient
 Intercept of the Line: mlr_intercept
 Root Mean Squared Error (RMSE): mlr_rmse
 
+![Screenshot 2024-07-18 173146](https://github.com/user-attachments/assets/0736b96e-ae8b-404a-acca-fa00cc62b353)
+
+
 # Conclusion
 This project demonstrates the use of Linear Regression for predicting students' marks. The results indicate the model's performance in terms of R-squared score and RMSE. Future work can include testing other regression models and feature selection techniques to further improve prediction accuracy.
 
