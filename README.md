@@ -2,7 +2,7 @@
 # Student Marks Prediction Project
 This project aims to predict students' marks based on various features using a Linear Regression machine learning model. The project involves data preprocessing, model training, and evaluation.
 
-# steps of project 
+# "steps of project" 
 Dataset
 Dependencies
 Implementation
