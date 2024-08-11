@@ -15,6 +15,9 @@ This project aims to predict students' marks based on various features using a L
 ### Dataset
 The dataset used in this project is stored in a CSV file named 02 students.csv. The dataset includes various features related to students and their marks.
 
+![Screenshot 2024-08-11 103101](https://github.com/user-attachments/assets/52448f7a-4cc3-4d66-bc1f-810c4aeb284a)
+
+
 ### Dependencies
 The project requires the following Python libraries:
 * pandas
